@@ -18,7 +18,7 @@ _list: Number[] = [1, 2, 3];
     // - this will give you a way to identify each template.
     
     // use the id provided in the new directive to retreive a template from the querylist 
-    // and use that template in an ngTemplateOutlet in an ngTemplate tag or an ngContainer.
+    // and used that template in an ngTemplateOutlet in an ngTemplate tag or an ngContainer.
   }
 
 }
