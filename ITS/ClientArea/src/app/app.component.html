@@ -17,10 +17,10 @@
 
 <div>
   <TreeView>
-      <ng-template #_template let-context="item" let-foo="bar">
+      <ng-template #_template let-col let-foo="bar">
           <!-- <div>{{col}}</div>
           <div>{{foo}}</div> -->
-          <div>Really Not?! {{context.name}}</div>
+          <p>Really Not?!</p>
           <div class="ui styled accordion">
               <div class="section">
                 <Collapsible [headline]="'really Works!'" 
@@ -33,10 +33,9 @@
               </div>
             </div>
       </ng-template>
-      <ng-template #liftoff let-context="item" let-t="t">
+      <ng-template #liftoff>
         <div>
-          <p>we have liftoff {{context.counter}}</p>
-          <p>we have liftoff {{t}}</p>
+          <p>we have liftoff</p>
         </div>
       </ng-template>
       <ng-template >
