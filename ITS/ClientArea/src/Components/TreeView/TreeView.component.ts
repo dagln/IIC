@@ -9,16 +9,29 @@ import { ContentChildren, Component, OnInit, Input, ViewChildren,
 export class TreeViewComponent implements OnInit {
 @ContentChild(TemplateRef) _template: TemplateRef<ElementRef>;
 @ContentChildren(TemplateRef) _templates: QueryList<TemplateRef<ElementRef>>;
+_temps: TemplateRef<ElementRef>[];
+ctx = {name: "bla"}
 
-_list: Number[] = [1, 2, 3];
-  constructor() { }
-
-  ngOnInit() {
-    // contentchildren the templates by using the new directive as selector, not TemplateRef. 
-    // - this will give you a way to identify each template.
-    
-    // use the id provided in the new directive to retreive a template from the querylist 
-    // and used that template in an ngTemplateOutlet in an ngTemplate tag or an ngContainer.
+_list: number[] = [1,2,3];
+_ilist: Thing[] = [new Thing("right", 1), new Thing("now", 2)];
+  constructor() {
   }
 
+  getText(): string {
+    return "fine, just fine";
+  }
+  ngOnInit() {
+   //this._temps = this._templates.toArray();
+  }
+
+}
+
+export class Thing{
+  public name: string;
+  public counter: number
+
+  constructor(name: string, counter: number) {
+    this.name = name;
+    this.counter = counter;
+  }
 }
