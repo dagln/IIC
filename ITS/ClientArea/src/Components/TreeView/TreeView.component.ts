@@ -11,6 +11,7 @@ export class TreeViewComponent implements OnInit, AfterContentInit {
 @ContentChildren(TemplateRef) _templates: QueryList<TemplateRef<ElementRef>>;
 _temps: TemplateRef<ElementRef>[];
 ctx = {name: 'bla'};
+tms = {};
 _index: number = 0;
 
 _list: number[] = [1, 2, 3];
@@ -22,11 +23,13 @@ _ilist: Thing[] = [new Thing('right', 1), new Thing('now', 2)];
     return 'fine, just fine';
   }
   getTemplate(index: number): TemplateRef<ElementRef> {
-    return this._temps[index];
+    return this.tms[index];
+    // return this._temps[index];
   }
   ngOnInit() {}
   ngAfterContentInit() {
     this._temps = this._templates.toArray();
+    this._templates.forEach((item, index) => this.tms[index] = item);
   }
 
 }
