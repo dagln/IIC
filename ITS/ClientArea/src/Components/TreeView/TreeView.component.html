@@ -7,7 +7,13 @@
 
 
 <!-- Instead of this ngFor the structure, ie. the step bar, the secondary multiple, the single etc.
-In each step of the ngFor use the iterator/chain of responsability to instansiate the template. -->
+In each step of the ngFor use the iterator/chain of responsability to instansiate the template.
+
+TO DO:
+1.  create directive to set id's in order to map them to the template list.
+2.  create the iterator, COR and possibly tree traversal.
+3.  possibly directives for strategies.
+-->
 <ng-template ngFor let-item [ngForOf]="_ilist">
     <!-- <ng-template [ngTemplateOutlet]="item">
 
