@@ -6,11 +6,12 @@ import { ContentChildren, Component, OnInit, Input, ViewChildren,
   templateUrl: './TreeView.component.html',
   styleUrls: ['./TreeView.component.css']
 })
-export class TreeViewComponent implements OnInit {
+export class TreeViewComponent implements OnInit, AfterContentInit {
 @ContentChild(TemplateRef) _template: TemplateRef<ElementRef>;
 @ContentChildren(TemplateRef) _templates: QueryList<TemplateRef<ElementRef>>;
 _temps: TemplateRef<ElementRef>[];
 ctx = {name: 'bla'};
+_index : number = 0;
 
 _list: number[] = [1, 2, 3];
 _ilist: Thing[] = [new Thing('right', 1), new Thing('now', 2)];
@@ -20,8 +21,14 @@ _ilist: Thing[] = [new Thing('right', 1), new Thing('now', 2)];
   getText(): string {
     return 'fine, just fine';
   }
+  getIndex(): number {
+    return this._index;
+  }
   ngOnInit() {
-   // this._temps = this._templates.toArray();
+    
+  }
+  ngAfterContentInit() {
+    this._temps = this._templates.toArray();
   }
 
 }
