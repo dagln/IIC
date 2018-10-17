@@ -1,5 +1,5 @@
 import { ContentChildren, Component, OnInit, Input, ViewChildren,
-  QueryList, ContentChild, TemplateRef, ElementRef } from '@angular/core';
+  QueryList, ContentChild, TemplateRef, ElementRef, AfterContentInit } from '@angular/core';
 
 @Component({
   selector: 'TreeView',
@@ -11,7 +11,7 @@ export class TreeViewComponent implements OnInit, AfterContentInit {
 @ContentChildren(TemplateRef) _templates: QueryList<TemplateRef<ElementRef>>;
 _temps: TemplateRef<ElementRef>[];
 ctx = {name: 'bla'};
-_index : number = 0;
+_index: number = 0;
 
 _list: number[] = [1, 2, 3];
 _ilist: Thing[] = [new Thing('right', 1), new Thing('now', 2)];
@@ -24,9 +24,7 @@ _ilist: Thing[] = [new Thing('right', 1), new Thing('now', 2)];
   getIndex(): number {
     return this._index;
   }
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
   ngAfterContentInit() {
     this._temps = this._templates.toArray();
   }
