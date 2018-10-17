@@ -44,3 +44,32 @@
         </ng-template>
     </TreeView>
 </div>
+
+<!-- 
+    <treeview>
+        <templates>
+        <template-group name="multiple">
+            <ng-template id="mainheadertemplate">
+    
+                </ng-template>
+                <ng-template id="secondarytemplate">
+    
+                </ng-template>
+        </template-group>
+        <template-group name="single">
+            <ng-template id="singletemplatemodulepicker">
+                
+                </ng-template>
+        </template-group>
+        </templates>
+        <stratagies>
+        <strategy policy="once" apply-on="level">
+            <strategy policy="once" apply-group="multiple" name="mainheadertemplate"></strategy>  
+            <strategy policy="once" apply-group="single" name="singletemplatecomponent"></strategy>  
+        </strategy> 
+        <stratagy policy="iterateandrepeat" apply-on="tree">
+            <strategy policy="iterate" apply-on="level" apply-group="multiple" name="secondarytemplate"></strategy>
+        </stratagy>>
+    </stratagies>
+  </treeview>
+ -->
