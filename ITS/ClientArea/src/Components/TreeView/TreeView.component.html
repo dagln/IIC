@@ -12,7 +12,7 @@ In each step of the ngFor use the iterator/chain of responsability to instansiat
     <!-- <ng-template [ngTemplateOutlet]="item">
 
   </ng-template> -->
-    <ng-container *ngTemplateOutlet="_temps[getIndex()]; context:{item: item, t: getText()}">
+    <ng-container *ngTemplateOutlet="getTemplate(_index); context:{item: item, t: getText()}">
 
     </ng-container>
 </ng-template>

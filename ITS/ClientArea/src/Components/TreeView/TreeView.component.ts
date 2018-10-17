@@ -21,8 +21,8 @@ _ilist: Thing[] = [new Thing('right', 1), new Thing('now', 2)];
   getText(): string {
     return 'fine, just fine';
   }
-  getIndex(): number {
-    return this._index;
+  getTemplate(index: number): TemplateRef<ElementRef> {
+    return this._temps[index];
   }
   ngOnInit() {}
   ngAfterContentInit() {
