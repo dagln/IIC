@@ -21,7 +21,17 @@ class ArrayIterator<T> implements Iterator<T> {
         return this._current == this.items.length - 1;
     }
 }
+class CombinationIterator<T> implements Iterator<T> {
+    _combinator: Iterator<Iterator<T>>;
+    _comnbined: Iterator<T>;
+    _chain: Iterator<T>[];
 
+    constructor(combinator: Iterator<Iterator<T>>, combined: Iterator<T>) {
+        this._combinator = combinator;
+        this._comnbined = combined;
+    }
+    
+}
 
  export interface AggregateIterationBuilder<T> {
      create_iterator() : Iterator<T>;
