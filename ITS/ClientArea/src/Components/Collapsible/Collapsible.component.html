@@ -10,7 +10,9 @@
     <!-- <ng-content select="accordionheader"></ng-content> -->
 </div>
 <div style="max-height: 0; overflow: hidden;" [ngClass]="display ? 'active content': 'inactive content'" #contentChild>
-    <accordioncontent [content]='contenttext'></accordioncontent>
+    <accordioncontent [content]='contenttext'>
+        <Clickable [message]='ok'></Clickable>
+    </accordioncontent>
     <!-- <ng-content select="accordioncontent"></ng-content> -->
 </div>
 <!-- </div> -->

@@ -35,7 +35,7 @@
 .ui.styled.accordion .title,
 .ui.styled.accordion .section .title {
     margin: 0em;
-    padding: 0.75em 1em;
+    padding: 0.1em 1em;
     color: rgba(0, 0, 0, 0.4);
     font-weight: bold;
     border-top: 1px solid rgba(34, 36, 38, 0.15);
@@ -65,19 +65,25 @@
 .ui.styled.accordion .content,
 .ui styled.accordion .section .content {
     margin: 0em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
     -webkit-transition: max-height .3s linear, padding-bottom .3s linear, padding-top .3s linear;
     transition: max-height .3s linear, padding-top .3s linear, padding-bottom .3s linear;
+}
+
+.ui.styled.accordion .content p,
+.ui styled.accordion .section .content p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 
 .ui.accordion .active.content,
 .ui.accordion .section .active.content {
     /* visibility: visible; */
     /* padding-top: 0.5em; */
-    padding-bottom: 1.5em;
-    padding-top: 1em;
+    padding-bottom: .1em;
+    padding-top: .1em;
 }
 
 .ui.accordion .inactive.content,

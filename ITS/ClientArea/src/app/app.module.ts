@@ -7,6 +7,7 @@ import { CollapsibleComponent } from '../Components/Collapsible/Collapsible.comp
 import { AccordioncontentComponent } from '../components/accordioncontent/accordioncontent.component';
 import { TreeViewComponent } from '../components/TreeView/TreeView.component';
 import { WizardComponent } from '../components/wizard/wizard.component';
+import { ClickableComponent } from '../components/clickable/clickable.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { WizardComponent } from '../components/wizard/wizard.component';
     AccordioncontentComponent,
     TreeViewComponent,
     WizardComponent,
+    ClickableComponent,
 
   ],
   imports: [

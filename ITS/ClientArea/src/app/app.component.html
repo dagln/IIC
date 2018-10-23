@@ -16,6 +16,7 @@
 <ng-container *ngTemplateOutlet="tmpl"></ng-container> -->
 
 <div>
+    <Clickable [message]="'collapse'"></Clickable>
     <div class="ui styled accordion">
         <div class="section">
             <Collapsible *ngFor="let category of categories" [headline]='category.title' [contenttext]='category.content' [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">

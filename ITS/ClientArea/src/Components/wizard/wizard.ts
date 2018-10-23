@@ -29,3 +29,8 @@ export class LeafWizard implements IWizard {
 
     }
 }
+
+export interface ResponderWizard extends IWizard {
+    wizard: IWizard;
+    _responder: IWizard;
+}
