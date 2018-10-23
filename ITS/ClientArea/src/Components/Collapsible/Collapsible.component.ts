@@ -26,20 +26,10 @@ export class CollapsibleComponent implements OnInit {
 
   headerClicked(event: any){
     this.display = !this.display;
-    
-    
     let _item: any = this._contentView.nativeElement;
-
-    // //this.heading = this._contentView.dnativeElement.scrollHeight;
-    
-    //let _height: Number = _item.scrollHeight;
-    //  _item.style.display = this.display ? 'block' : 'none';
-    let _height: Number = (this.display) ? _item.scrollHeight : 0; 
+    let _height: Number = (this.display) ? _item.scrollHeight : 0;
     this.heading = String(_height);
     _item.style.maxHeight = String(_height) + 'px';
-    //_item.style.overflow = 'hidden';
-    // //this.s_contentViedw
-    
   }
 
 }

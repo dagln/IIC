@@ -5,12 +5,12 @@
     {{_scrollHeight}} {{heading}}
 </p> -->
 <!-- <div class="ui styled accordion"> -->
-<div  (click)="headerClicked($event)" [ngClass]="display ? activeClass : inActiveClass">
-    <ng-content select="accordionheader"></ng-content>
+<div (click)="headerClicked($event)" [ngClass]="display ? activeClass : inActiveClass">
+    <accordionheader [head]='texting'></accordionheader>
+    <!-- <ng-content select="accordionheader"></ng-content> -->
 </div>
-<div style="max-height: 0; overflow: hidden;" 
-    [ngClass]="display ? 'active content': 'inactive content'"
-    #contentChild>
+<div style="max-height: 0; overflow: hidden;" [ngClass]="display ? 'active content': 'inactive content'" #contentChild>
+    <accordioncontent [content]="'content here'"></accordioncontent>
     <ng-content select="accordioncontent"></ng-content>
 </div>
 <!-- </div> -->

@@ -16,36 +16,60 @@
 <ng-container *ngTemplateOutlet="tmpl"></ng-container> -->
 
 <div>
-    <TreeView>
-        <ng-template #_template let-context="item" let-foo="bar">
-            <!-- <div>{{col}}</div>
-          <div>{{foo}}</div> -->
-            <div>Really Not?! {{context.name}}</div>
-            <div class="ui styled accordion">
-                <div class="section">
-                    <Collapsible [headline]="'really Works!'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
-                        <accordionheader>
-                        </accordionheader>
-                        <accordioncontent></accordioncontent>
-                    </Collapsible>
-                </div>
-            </div>
-        </ng-template>
-        <ng-template #liftoff let-item="item" let-t="t">
-            <div>
-                <p>we have liftoff {{item.counter}}. {{item.name}}</p>
-                <p>we have liftoff {{t}}</p>
-            </div>
-        </ng-template>
-        <ng-template>
-            <div>
-                <p>we have it all</p>
-            </div>
-        </ng-template>
-    </TreeView>
+    <div class="ui styled accordion">
+        <div class="section">
+            <Collapsible [headline]="'Account Settings'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
+                <accordionheader>
+                </accordionheader>
+                <accordioncontent></accordioncontent>
+            </Collapsible>
+
+            <Collapsible [headline]="'Requests'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
+                <accordionheader>
+                </accordionheader>
+                <accordioncontent></accordioncontent>
+            </Collapsible>
+
+            <Collapsible [headline]="'Trading Platforms'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
+                <accordionheader>
+                </accordionheader>
+                <accordioncontent></accordioncontent>
+            </Collapsible>
+        </div>
+    </div>
+
+
 </div>
 
 <!-- 
+
+    <TreeView>
+        <ng-template #_template let-context="item" let-foo="bar">
+            <div>{{col}}</div>
+          <div>{{foo}}</div> 
+          <div>Really Not?! {{context.name}}</div>
+          <div class="ui styled accordion">
+              <div class="section">
+                  <Collapsible [headline]="'go now'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
+                      <accordionheader>
+                      </accordionheader>
+                      <accordioncontent></accordioncontent>
+                  </Collapsible>
+              </div>
+          </div>
+      </ng-template>
+      <ng-template #liftoff let-item="item" let-t="t">
+          <div>
+              <p>we have liftoff {{item.counter}}. {{item.name}}</p>
+              <p>we have liftoff {{t}}</p>
+          </div>
+      </ng-template>
+      <ng-template>
+          <div>
+              <p>we have it all</p>
+          </div>
+      </ng-template>
+  </TreeView>
     <treeview>
         <templates>
         <template-group name="multiple">

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation,Input } from '@angular/core';
 
 @Component({
   selector: 'accordionheader',
@@ -6,7 +6,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./accordionheader.component.css']
 })
 export class AccordionheaderComponent implements OnInit {
-
+  @Input("head") header: string; // = "msg"
   constructor() { }
 
   ngOnInit() {
