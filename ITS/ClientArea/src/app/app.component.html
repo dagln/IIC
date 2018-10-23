@@ -18,22 +18,7 @@
 <div>
     <div class="ui styled accordion">
         <div class="section">
-            <Collapsible [headline]="'Account Settings'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
-                <accordionheader>
-                </accordionheader>
-                <accordioncontent></accordioncontent>
-            </Collapsible>
-
-            <Collapsible [headline]="'Requests'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
-                <accordionheader>
-                </accordionheader>
-                <accordioncontent></accordioncontent>
-            </Collapsible>
-
-            <Collapsible [headline]="'Trading Platforms'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
-                <accordionheader>
-                </accordionheader>
-                <accordioncontent></accordioncontent>
+            <Collapsible *ngFor="let category of categories" [headline]='category.title' [contenttext]='category.content' [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
             </Collapsible>
         </div>
     </div>
