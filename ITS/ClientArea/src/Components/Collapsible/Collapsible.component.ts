@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation, Input, ElementRef, ViewChild, Ren
 @Component({
   selector: 'Collapsible',
   templateUrl: './Collapsible.component.html',
-  styleUrls: ['./Collapsible.component.css','./sicon.css','./iaccordion.css'],
+  styleUrls: ['./Collapsible.component.css', './sicon.css', './iaccordion.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class CollapsibleComponent implements OnInit {
