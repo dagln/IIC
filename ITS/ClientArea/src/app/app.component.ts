@@ -19,7 +19,7 @@ export class AppComponent {
     {
       'title': 'Requests',
       'content': 'request content to come'
-    }
+    },
     {
       'title': 'Trading Platforms',
       'content': 'trading content to come'
