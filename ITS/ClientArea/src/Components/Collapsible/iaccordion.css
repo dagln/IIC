@@ -124,8 +124,7 @@
 }
 
 .title .icon:hover {
-    font-size: 3em;
-    color: blue;
+    font-size: 1.5em;
 }
 
 .ui.styled.accordion .title:hover,

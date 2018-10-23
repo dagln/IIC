@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-<!-- <link href="C:/Source/ITS/ClientArea/assets/styles/tstyle.css" rel="stylesheet"> -->
+<link href="C:/Source/ITS/ClientArea/assets/styles/tstyle.css" rel="stylesheet">
 <div style="text-align:center; float:right;" class="cgreen">
     <h1>
         Welcome to {{ title }}!
@@ -16,11 +16,13 @@
 <ng-container *ngTemplateOutlet="tmpl"></ng-container> -->
 
 <div>
-    <Clickable [message]="'collapse'"></Clickable>
     <div class="ui styled accordion">
         <div class="section">
             <Collapsible *ngFor="let category of categories" [headline]='category.title' [contenttext]='category.content' [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
             </Collapsible>
+            <div class="title">
+                <Clickable [message]="'ds'" class="icon-text"></Clickable>
+            </div>
         </div>
     </div>
 
@@ -36,7 +38,7 @@
           <div>Really Not?! {{context.name}}</div>
           <div class="ui styled accordion">
               <div class="section">
-                  <Collapsible [headline]="'go now'" [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
+                  <Collapsible [headline]="'go now '" [displayedClass]="'active title '" [hiddenClass]="'title '" [displayedContentClass]="'active content '">
                       <accordionheader>
                       </accordionheader>
                       <accordioncontent></accordioncontent>

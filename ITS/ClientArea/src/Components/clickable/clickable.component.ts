@@ -18,9 +18,10 @@ export class ClickableComponent implements OnInit {
   }
 
   headerClicked(event: any) {
+    this.counter++;
     const _item: any = this._contentView.nativeElement;
-    _item.style.color = 'red';
-    alert('clicked ' + this.counter++);
+    _item.style.color = (this.counter % 2 == 0) ? 'red' : 'blue';
+    //alert('clicked ' + this.counter++);
   }
 
 }
