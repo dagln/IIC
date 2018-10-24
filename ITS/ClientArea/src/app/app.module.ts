@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA, ContentChildren } from '@angular/core';
+import { RouterModule, Routes} from '@angular/router';
+import { WizardModule } from '../components/wizard/wizard.module';
 
 import { AppComponent } from './app.component';
 import { AccordionheaderComponent } from '../Components/accordionheader/accordionheader.component';
@@ -8,6 +10,12 @@ import { AccordioncontentComponent } from '../components/accordioncontent/accord
 import { TreeViewComponent } from '../components/TreeView/TreeView.component';
 import { WizardComponent } from '../components/wizard/wizard.component';
 import { ClickableComponent } from '../components/clickable/clickable.component';
+
+
+const appRoutes: Routes = [
+  { path: 'home', component: WizardComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full'}
+];
 
 @NgModule({
   declarations: [
@@ -21,7 +29,9 @@ import { ClickableComponent } from '../components/clickable/clickable.component'
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    WizardModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent],
