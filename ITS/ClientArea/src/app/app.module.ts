@@ -10,10 +10,12 @@ import { AccordioncontentComponent } from '../components/accordioncontent/accord
 import { TreeViewComponent } from '../components/TreeView/TreeView.component';
 import { WizardComponent } from '../components/wizard/wizard.component';
 import { ClickableComponent } from '../components/clickable/clickable.component';
+import { InfotileComponent } from '../Components/infotile/infotile.component';
 
 
 const appRoutes: Routes = [
   { path: 'home', component: WizardComponent },
+  { path: 'tile', component: InfotileComponent },
   { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 
@@ -26,6 +28,7 @@ const appRoutes: Routes = [
     TreeViewComponent,
     WizardComponent,
     ClickableComponent,
+    InfotileComponent,
 
   ],
   imports: [

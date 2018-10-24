@@ -25,6 +25,7 @@
 .inred {
     height: 0px;
     padding-top: 10px;
+    color: cornflowerblue;
 }
 
 .inicon::before {
