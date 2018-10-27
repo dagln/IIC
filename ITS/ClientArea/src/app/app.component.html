@@ -25,9 +25,10 @@
         <div class="section">
             <Collapsible *ngFor="let category of categories" [headline]='category.title' [contenttext]='category.content' [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
             </Collapsible>
-            <!-- <div class="title">
-                <Clickable [message]="'ds'" class="icon-text"></Clickable>
-            </div> -->
+            <div class="title" style="margin-left: 1.5em;">
+                <i class="category-icon icon copy outline"></i>
+                <Clickable [message]="'ds'" ></Clickable>
+            </div>
         </div>
     </div>
 

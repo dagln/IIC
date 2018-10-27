@@ -9,7 +9,7 @@
 }
 
 .ui.styled.accordion {
-    width: 15%;
+    width: 40%;
 }
 
 .ui.styled.accordion,
@@ -28,7 +28,8 @@
 .ui.accordion .title:not(.ui) {
     padding: 0.5em 0em;
     font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    /* font-size: 1em; */
+    font-size: 13px;
     color: rgba(0, 0, 0, 0.87);
 }
 
@@ -36,8 +37,9 @@
 .ui.styled.accordion .section .title {
     margin: 0em;
     padding: 0.1em 1em;
-    color: rgba(0, 0, 0, 0.4);
-    font-weight: bold;
+    /* color: rgba(0, 0, 0, 0.4); */
+    color: rgb(95, 99, 104);
+    font-weight: 550;
     border-top: 1px solid rgba(34, 36, 38, 0.15);
 }
 
@@ -148,4 +150,13 @@
 
 .ui.inverted.accordion .title:not(.ui) {
     color: rgba(255, 255, 255, 0.9);
+}
+
+.clickable {
+    margin-left: 3.25em;
+    background: blue;
+}
+
+.category-icon {
+    width: 2em;
 }
