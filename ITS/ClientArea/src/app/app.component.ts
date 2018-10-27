@@ -12,15 +12,18 @@ export class AppComponent {
   categories = [
     {
       'title': 'Account Summary',
-      'content': 'summary content to come'
+      'content': 'summary content to come',
+      'icon': 'icon copy outline'
     },
     {
       'title': 'Requests',
-      'content': 'request content to come'
+      'content': 'request content to come',
+      'icon': 'icon certificate'
     },
     {
       'title': 'Trading Platforms',
-      'content': 'trading content to come'
+      'content': 'trading content to come',
+      'icon': 'icon copy outline'
     }
   ]
 

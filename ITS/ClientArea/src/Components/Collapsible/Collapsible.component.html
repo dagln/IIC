@@ -1,19 +1,17 @@
-<!--ddd
-    accordionsection {{display}}
-</p>
-<p>{}
-    {{_scrollHeight}} {{heading}}
-</p> -->
-<!-- <div class="ui styled accordion"> -->
 
-<div (click)="headerClicked($event)" [ngClass]="display ? activeClass : inActiveClass">
-    <accordionheader [head]='texting'></accordionheader>
+<div (click)="headerClicked($event)" 
+    [ngClass]="display ? activeClass : inActiveClass"
+    style="padding-bottom: 1%;">
+    <!-- <accordionheader [head]='texting'></accordionheader> -->
+    <i class="icon caret right handle"></i> 
+    <i class="tooltip" [ngClass]="icon"></i> 
+    {{texting}}
     <!-- <ng-content select="accordionheader"></ng-content> -->
 </div>
 <div style="max-height: 0; overflow: hidden;" [ngClass]="display ? 'active content': 'inactive content'" #contentChild>
+        <Clickable [message]="'content text'" style="display: block;"></Clickable>
+        <Clickable [message]="'content text'"></Clickable>
     <accordioncontent [content]='contenttext'>
-        <Clickable [message]='ok'></Clickable>
-        <Clickable [message]='ok'></Clickable>
 
     </accordioncontent>
 

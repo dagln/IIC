@@ -23,10 +23,16 @@
 <div>
     <div class="ui styled accordion">
         <div class="section">
-            <Collapsible *ngFor="let category of categories" [headline]='category.title' [contenttext]='category.content' [displayedClass]="'active title'" [hiddenClass]="'title'" [displayedContentClass]="'active content'">
+            <Collapsible *ngFor="let category of categories" 
+                [headline]='category.title' 
+                [contenttext]='category.content' 
+                [displayedClass]="'active title'" 
+                [hiddenClass]="'title'" 
+                [displayedContentClass]="'active content'"
+                [icon]='category.icon'>
             </Collapsible>
-            <div class="title" style="margin-left: 1.5em;">
-                <i class="category-icon icon copy outline"></i>
+            <div class="title" style="margin-left: 1.8em;">
+                <i class="icon copy outline"></i>
                 <Clickable [message]="'ds'" ></Clickable>
             </div>
         </div>

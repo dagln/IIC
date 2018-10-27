@@ -12,6 +12,7 @@ export class CollapsibleComponent implements OnInit {
   @Input('displayedClass') activeClass: string;
   @Input('displayedContentClass') contentClass: string;
   @Input('contenttext') contenttext: string;
+  @Input('icon') icon: string;
   hiddenContentClass: string = 'content';
   @ViewChild('contentChild') _contentView: ElementRef;
   display: boolean = false;

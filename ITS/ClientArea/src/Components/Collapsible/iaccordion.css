@@ -36,7 +36,7 @@
 .ui.styled.accordion .title,
 .ui.styled.accordion .section .title {
     margin: 0em;
-    padding: 0.1em 1em;
+    padding: 0.1em .1em;
     /* color: rgba(0, 0, 0, 0.4); */
     color: rgb(95, 99, 104);
     font-weight: 550;
@@ -104,7 +104,7 @@
     height: 1em;
     margin: 0em 0.25rem 0em 0rem;
     padding: 0em;
-    font-size: 1em;
+    font-size: 1.2em;
     -webkit-transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
     transition: opacity 0.1s ease, -webkit-transform 0.1s ease;
     transition: transform 0.1s ease, opacity 0.1s ease;
