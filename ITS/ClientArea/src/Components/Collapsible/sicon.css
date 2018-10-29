@@ -445,10 +445,10 @@
     font-size: 0.75em;
   }
   
-  i.icon,
+  /* i.icon,
   i.icons {
     font-size: 1em;
-  }
+  } */
   
   i.large.icon,
   i.large.icons {

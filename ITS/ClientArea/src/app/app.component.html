@@ -26,14 +26,14 @@
             <Collapsible *ngFor="let category of categories" 
                 [headline]='category.title' 
                 [contenttext]='category.content' 
-                [displayedClass]="'active title'" 
+                [displayedClass]="'iic active title change-on-click'" 
                 [hiddenClass]="'title'" 
                 [displayedContentClass]="'active content'"
                 [icon]='category.icon'>
             </Collapsible>
             <div class="title" style="margin-left: 1.8em;">
                 <i class="icon copy outline"></i>
-                <Clickable [message]="'ds'" ></Clickable>
+                <!-- <Clickable [message]="'ds'" ></Clickable> -->
             </div>
         </div>
     </div>

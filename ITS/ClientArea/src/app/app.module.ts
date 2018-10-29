@@ -9,7 +9,7 @@ import { CollapsibleComponent } from '../Components/Collapsible/Collapsible.comp
 import { AccordioncontentComponent } from '../components/accordioncontent/accordioncontent.component';
 import { TreeViewComponent } from '../components/TreeView/TreeView.component';
 import { WizardComponent } from '../components/wizard/wizard.component';
-import { ClickableComponent } from '../components/clickable/clickable.component';
+// import { ClickableComponent } from '../components/clickable/clickable.component';
 import { InfotileComponent } from '../Components/infotile/infotile.component';
 
 
@@ -27,7 +27,6 @@ const appRoutes: Routes = [
     AccordioncontentComponent,
     TreeViewComponent,
     WizardComponent,
-    ClickableComponent,
     InfotileComponent,
 
   ],

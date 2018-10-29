@@ -1,35 +1,28 @@
-/* .green
-{
-    background-color: lightgreen;
+.arrow {
+    font-size: 1.2em;
 }
 
-.blue
-{
-    background-color: cornflowerblue; 
-    border: 1px solid red;
+.tooltip {
+    font-size: 1.6em;
+}
+
+.change-on-click .tooltip,
+div.change-on-click span{
+    color: rgb(25, 103, 210);
+}
+
+.titletext {
+    margin-left: 3%;
+}
+.active.title div.iic {
+    width: 200px;
+    background-color:rgb(232, 240, 254);
+    border-top-right-radius: 20.5px;
+    border-bottom-right-radius: 20.5px;
+    padding-right: 2%;
+    color: rgba(0, 0, 0, 0.87);
+    display: inline-block;
+    padding-top: 2%;
+    padding-bottom: 2%;
     
 }
-.blue p, .green p
-{
-    margin: 0 0 0 0;
-}
-div
-{
-    vertical-align: baseline;
-    font-size: 14px;
-    
-}
-div p 
-{
-    vertical-align: middle;
-    margin: 0 0 0 0;
-}
-.yesborder
-{
-    border: 1px solid black;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: 1px solid white;
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-} */
